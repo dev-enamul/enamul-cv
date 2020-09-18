@@ -1,0 +1,112 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+.top_option{
+  height: 20px;
+  background-color: #fff;
+}
+/* ========================================
+Nav Section
+======================================== */
+.nav_bar{
+  background: #039be5;
+
+}
+.logo{
+  width: 100px;
+    padding: 6px;
+}
+.search_section{
+  padding: 6px;
+}
+.under_nav{
+  background: #2f64a3;
+  height: 10px;
+}
+.login_carate{
+  list-style: none;
+  float: right;
+  margin: 0px;
+
+}
+.login_carate li{
+float: left;
+
+}
+.login_carate li a{
+  font-size: 20px;
+    padding: 5px 20px;
+    color: #fff;
+    display: block;
+}
+.login_carate li a:hover{
+  text-decoration: none;
+}
+
+/* =========================
+Body Section Start
+======================= */
+.post_section{
+  overflow-y: scroll;
+    height: 1000px;
+    display: block;
+}
+.post_section::-webkit-scrollbar {
+    display: none;
+}
+.user_post{
+
+}
+.user_post ul{
+
+}
+.user_post ul li{
+  list-style: none;
+  float: left;
+  margin-right: 10px;
+  font-family: 'Handlee', cursive;
+
+}
+.user_post ul li a{
+  color: #2f64a3;
+      font-size: 10px;
+      display: block;
+}
+.user_post ul li a:first-child{
+    color: #2f64a3;
+      font-size: 18px;
+}
+.user_post ul li img{
+  width: 40px;
+border-radius: 50px;
+}
+.post_photo{
+  padding: 0px;
+}
+.post_photo img{
+  width:100%
+}
+
+.like_comment{
+padding: 20px;
+}
+.like_comment a{
+  font: 20px;
+font-family: 'Handlee', cursive;
+}
+.like_comment a i{
+
+}
+.love_react i{
+  color: red;
+}
+.love_react i:hover{
+  color: #ddd;
+  transition: .2s;
+  overflow: hidden;
+
+}
