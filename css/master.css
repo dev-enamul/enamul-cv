@@ -2,6 +2,17 @@
   margin: 0px;
   padding: 0px;
 }
+:root {
+  --color-1: #039be5;
+  --color-2: #2f64a3;
+  --font-style:'Handlee', cursive;
+  --title-font-size-1:18px;
+  --hover-color:#039be5;
+}
+
+body{
+  overflow: hidden;
+}
 body::-webkit-scrollbar {
     display: none;
 }
@@ -13,7 +24,7 @@ body::-webkit-scrollbar {
 Nav Section
 ======================================== */
 .nav_bar{
-  background: #039be5;
+  background: var(--color-1);
 
 }
 .logo{
@@ -24,7 +35,7 @@ Nav Section
   padding: 6px;
 }
 .under_nav{
-  background: #2f64a3;
+  background: var(--color-2);
   height: 10px;
 }
 .login_carate{
@@ -72,13 +83,13 @@ Body Section Start
 
 }
 .user_post ul li a{
-  color: #2f64a3;
+  color: var(--color-2);
       font-size: 10px;
       display: block;
 }
 .user_post ul li a:first-child{
-    color: #2f64a3;
-      font-size: 18px;
+    color: var(--color-2);
+      font-size: var(--title-font-size-1);
 }
 .user_post ul li img{
   width: 40px;
@@ -96,7 +107,7 @@ padding: 20px;
 }
 .like_comment a{
   font: 20px;
-font-family: 'Handlee', cursive;
+font-family: var(--font-style);
 }
 .like_comment a i{
 
@@ -105,8 +116,65 @@ font-family: 'Handlee', cursive;
   color: red;
 }
 .love_react i:hover{
-  color: #ddd;
+  color: var(--hover-color);
   transition: .2s;
   overflow: hidden;
 
+}
+
+/* home page right section start  ===================================*/
+
+
+.home_page_user{
+
+}
+.home_page_user ul{
+
+}
+.home_page_user ul li{
+list-style: none;
+text-align: center;
+}
+.home_page_user ul li a{
+color: var(--color-2);
+font-size: var(--title-font-size-1);
+font-weight: bold;
+font-style: var(--font-style);
+}
+.home_page_user ul li a:hover{
+  text-decoration: none;
+  color: var(--hover-color);
+}
+.home_page_user ul li img{
+  width: 70px;
+  border-radius: 100px;
+  float: center;
+}
+
+/* Suggest follower */
+.suggest_follower{
+padding-top: 2PX;
+}
+.suggest_follower ul{
+
+}
+.suggest_follower ul li{
+  list-style: none;
+  padding-bottom: 8PX;
+}
+.suggest_follower ul li:first-child{
+  color: #949494;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.suggest_follower ul li a{
+
+}
+.suggest_follower ul li span{
+  float: right;
+}
+.suggest_follower img{
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
 }
