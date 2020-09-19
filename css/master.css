@@ -61,6 +61,32 @@ float: left;
 /* =========================
 Body Section Start
 ======================= */
+/* left bar popular post */
+ .popular_photo_section{
+   padding-top: 3px;
+   border-radius: 5px;
+ }
+ .popular_photo_section>a{
+ font-size: 20px;
+ color: #999;
+ }
+  .popular_photo_section a:hover{
+    text-decoration: none;
+  }
+ .popular_photo_section span{
+   font-size: 15px;
+    color: var(--color-1)
+
+ }
+ .popular_photo_section span:hover{
+   text-decoration: none;
+ 
+
+ }
+.popular_photo{
+  padding: 2px;
+}
+/* post section */
 .post_section{
   overflow-y: scroll;
     height: 1000px;
