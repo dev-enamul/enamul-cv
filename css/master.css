@@ -80,7 +80,7 @@ Body Section Start
  }
  .popular_photo_section span:hover{
    text-decoration: none;
- 
+
 
  }
 .popular_photo{
@@ -125,7 +125,8 @@ border-radius: 50px;
   padding: 0px;
 }
 .post_photo img{
-  width:100%
+  width:100%;
+  cursor:pointer;
 }
 
 .like_comment{
@@ -211,13 +212,73 @@ font-weight: bold;
   height: 20px;
   border-radius: 100px;
 }
+/* =====================================================
+Modal image view section
+===================================================== */
+
+/* Modal Content */
+.modal_image_comment{
+ position: fixed;
+ top: 0;
+ left: 0;
+ z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 2;
+  display: none;
+}
+.image_comment{
+  background: #fff;
+    margin-top: 10%;
+    padding: 10px;
+    position: relative;
+    max-height: 500px;
+}
+.image_comment img{
+      width: 100%;
+}
+.view_post_user{
+
+}
+.view_post_user ul{
+
+}
+.view_post_user ul li{
+list-style: none;
+}
+.view_post_user ul li img{
+ width: 30px;
+ border-radius: 100px;
+ float: left;
+}
+.view_post_user ul li a{
+  font-size: 15px;
+  font-style: var(--font-style);
+  vertical-align: baseline;
+  padding: 11px;
+  color: #232323;
+  font-weight: 500;
+}
+.modal_comment_view{
+height: 400px;
+overflow-y: scroll;
+}
+.close_modal{
+  position: fixed;
+      top: 18px;
+      right: 15px;
+      background: no-repeat;
+      font-size: 32px;
+      color: #fff;
+      padding: 1px 20px;
+      z-index: 999;
+}
 
 
-/* =========================
-=========================
+/* ==================================================
 Login and Resistration Page
-=========================
-========================= */
+================================================== */
 
 .login_body{
   border-radius: 4px;
