@@ -228,15 +228,46 @@ Modal image view section
   opacity: 2;
   display: none;
 }
+
 .image_comment{
   background: #fff;
     margin-top: 10%;
     padding: 10px;
     position: relative;
-    max-height: 500px;
+    max-height: 550px;
 }
 .image_comment img{
       width: 100%;
+}
+.left_btn{
+  position: absolute;
+  top: 210px;
+  z-index: 999;
+  left: 19px;
+  background: rgba(0,0,0, .3);
+  padding: 9px;
+  color: #fff;
+  font-size: 24px;
+  display: none;
+  cursor: pointer;
+}
+.right_btn{
+  position: absolute;
+  top: 210px;
+  z-index: 999;
+  right: 19px;
+  background: rgba(0,0,0, .3);
+  padding: 9px;
+  color: #fff;
+  font-size: 24px;
+  display: none;
+  cursor: pointer;
+}
+.image_comment:hover .left_btn{
+  display: block;
+}
+.image_comment:hover .right_btn{
+  display: block;
 }
 .view_post_user{
 
@@ -261,8 +292,11 @@ list-style: none;
   font-weight: 500;
 }
 .modal_comment_view{
-height: 400px;
+height: 375px;
 overflow-y: scroll;
+}
+.modal_comment_view::-webkit-scrollbar {
+    display: none;
 }
 .close_modal{
   position: fixed;
@@ -273,6 +307,38 @@ overflow-y: scroll;
       color: #fff;
       padding: 1px 20px;
       z-index: 999;
+}
+.modal_comment_view{
+
+}
+.modal_comment_view ul{
+
+}
+.modal_comment_view ul li{
+list-style: none;
+background: #f3f3f3;
+    padding: 12px;
+    border-radius: 11px;
+    margin-bottom: 10px
+}
+.modal_comment_view ul li img{
+ width: 38px;
+ float: left;
+ border-radius: 50%;
+ margin-right: 20px;
+
+}
+.modal_comment_view ul li div{
+  text-align: justify;
+}
+.modal_comment_view ul li div a{
+font-weight: bold;
+}
+.reply_section{
+  margin-left: 40px;
+}
+.reply_comment{
+  margin-left: 38px;
 }
 
 
