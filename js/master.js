@@ -1,69 +1,76 @@
-var scree_height = screen.height;
+// function mobileBtn(evt, btnName) {
 
-
-var modal = document.getElementById("myModal");
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close_modal")[0];
-
-// When the user clicks the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
+//   var i, tabcontent, tablinks;
+//   tabcontent = document.getElementsByClassName("tabcontent");
+//   tablinks = document.getElementsByClassName("mbl_btn");
+  
+// 	for (i = 0; i < tabcontent.length; i++) {
+// 		tabcontent[i].style.display = "none";
+// 	}
+// 	for (i = 0; i < tablinks.length; i++) {
+// 		tablinks[i].className = tablinks[i].className.replace(" active", "");
+// 	}
+//   document.getElementById(btnName).style.display = "block";
+   
+//   evt.currentTarget.className += " active";
 // }
 
-
-
-// Slider section
-var sliderimg = document.querySelectorAll(".slider_image");
-var left_btn = document.querySelector(".left_btn");
-var right_btn = document.querySelector(".right_btn");
-var current = 0;
-function reset(){
-  for(var i=0; i<sliderimg.length;i++){
-    sliderimg[i].style.display = "none";
+function tabbtn(evt, btnName,btn) {
+	var i, tabcontent, tabbtn;
+	tabcontent = document.getElementsByClassName("tabcontent");
+	tabbtn = document.getElementsByClassName("tabbtn");
+	
+	if(btnName!=home && window.innerWidth<=700){
+		document.querySelector(".left_site").style.display="none";
+	}
+	
+	  for (i = 0; i < tabcontent.length; i++) {
+		  tabcontent[i].style.display = "none";
+	  }
+	  for (i = 0; i < tabbtn.length; i++) {
+		tabbtn[i].style.background = "none";
+	  }
+	  document.getElementById(btnName).style.display = "block";
+	  
+	   
+	  tabbtn[btn].style.background = "#defaff";
+	
+  
+	  localStorage.setItem("page",btnName);
+	  localStorage.setItem("btn",btn);
   }
-}
 
-function start(){
-  reset();
-  sliderimg[0].style.display = "block";
-}
-start();
 
-function leftSlide(){
-  reset();
-  if(current===0){
-    current=sliderimg.length;
+
+
+
+  if(localStorage.length>0){
+	if(window.innerWidth<=700){
+		document.querySelector(".left_site").style.display="none";
+		tabbtn(event, localStorage.getItem("page"),localStorage.getItem("btn"));
+	}else{
+
+		tabbtn(event, localStorage.getItem("page"),localStorage.getItem("btn"));;
+	}
+	
+  }else{
+	if(window.innerWidth<=700){
+		document.querySelector(".right_site").style.display="none";
+		tabbtn(event,'home',0);
+	}else{
+		
+		tabbtn(event,'about',0);
+	}
   }
-  sliderimg[current-1].style.display = "block";
-  current--;
-}
-function rightSlide(){
-  reset();
-  if(current===sliderimg.length-1){
-    current= -1;
-  }
-  sliderimg[current+1].style.display = "block";
-  current++;
-}
 
-left_btn.addEventListener("click", function(){
-   leftSlide();
-});
-right_btn.addEventListener("click", function(){
-   rightSlide();
-});
+
+
+
+//  ======================================================
+//  work menu
+//  ======================================================
+ 
+
+
+
+ 

@@ -1,318 +1,554 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Moner kotha</title>
+  <title>Md Enamul Haque</title>
   <link rel = "icon" href="images/logo.png" type = "image/x-icon">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/master.css">
 
 </head>
-<body class="body_index">
-
-<!-- top section -->
-
-<div class="container-fluid top_option">
-</div>
-
+<body>
+<!--Moble Bottom Button-->
 <div class="mobile_button">
-  <div class=""> <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>  </div>
-  <div class=""><i class="fa fa-home" aria-hidden="true"></i>  </div>
-  <div class=""> <i class="fa fa-plus" aria-hidden="true"></i>  </div>
+  <div class="mbl_btn active"  onclick="tabbtn(event, 'home',0)">
+    <ul>
+    <li><i class="fa fa-home"" aria-hidden="true"></i></li>
+    <li>HOME</li>
+  </ul>
+</div>
+ <div class="mbl_btn active"  onclick="tabbtn(event, 'about',1)">
+    <ul>
+    <li><i class="fa fa-home"" aria-hidden="true"></i></li>
+    <li>About</li>
+  </ul>
+</div>
+  <div class="mbl_btn" onclick="tabbtn(event, 'resome',1)">
+    <ul>
+      <li><i class="fa fa-id-card-o" aria-hidden="true"></i></li>
+      <li>RESOME</li>
+  </ul>
+  </div>
+  <div class=" mbl_btn" onclick="tabbtn(event, 'work',2)">
+    <ul>
+      <li><i class="fa fa-pencil-square-o" aria-hidden="true"></i></li>
+      <li>WORK</li>
+  </ul>
+  </div>
+  <div class="mbl_btn" onclick="tabbtn(event, 'blog',3)">
+    <ul>
+      <li><i class="fa fa-pencil-square-o" aria-hidden="true"></i></li>
+      <li>BLOG</li>
+  </ul>
+  </div>
+
+  <div class="mbl_btn" onclick="tabbtn(event, 'tutorial',4)">
+    <ul>
+      <li><i class="fa fa-pencil-square-o" aria-hidden="true"></i></li>
+      <li>VIDEO</li>
+  </ul>
+  </div>
+
+  <div class="mbl_btn" onclick="gallery(event, 'blog',5)">
+    <ul>
+      <li><i class="fa fa-pencil-square-o" aria-hidden="true"></i></li>
+      <li>PHOTO</li>
+  </ul>
+  </div>
+  
+  <div class="mbl_btn" onclick="tabbtn(event, 'contact',4)">
+      <ul>
+        <li><i class="fa fa-users" aria-hidden="true"></i></li>
+        <li>Connect</li>
+    </ul>
+   </div>
 
 </div>
 
+<div class="circle"><div class="dot"></div></div>
+<div class="circle"><div class="dot"></div></div>
+<div class="circle"><div class="dot"></div></div>
+<div class="circle"><div class="dot"></div></div>
+<div class="circle"><div class="dot"></div></div>
+<div class="circle"><div class="dot"></div></div>
+<div class="circle"><div class="dot"></div></div>
+<div class="circle"><div class="dot"></div></div>
+<div class="circle"><div class="dot"></div></div>
+<div class="circle"><div class="dot"></div></div>
 
-<div class="container-fluid">
-  <!-- ==========================================
-  nav bar
-  ========================================== -->
-  <div class="nav_bar">
-    <div class="container">
-      <div class="row">
-        <div class="col-4 col-md-4">
-          <img class="logo" src="images/logo.png" alt="">
-        </div>
-        <div class="col-4 col-md-4 search_section">
-          <form class="" action="" method="post">
-            <div class="input-group form-sm form-2">
-               <input class="form-control" type="text" placeholder="Search">
-                      <div class="input-group-append"> <span class="input-group-text"><i class="fa fa-search text-gray"
-                       aria-hidden="true"></i></span>
-                     </div>
-            </div>
-          </form>
-        </div>
-        <div class="col-8 col-md-4">
-          <ul class="login_carate">
-            <li> <a href="#"> <i class="fa fa-file-image-o" aria-hidden="true"></i> </a> </li>
-            <li> <a href="#"> <i class="fa fa-commenting" aria-hidden="true"></i> </a> </li>
-            <!-- <li><a href="login.html"> <i class="fa fa-sign-in" aria-hidden="true"></i> </a> </li>
-            <li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> </a></li> -->
-            <li><a href="`#`"><img style="width:26px;height:26px;border-radius:50%" src="images/profile/2.jpg" alt=""> </a> </li>
+<div class="circle"><div class="dot"></div></div>
 
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="under_nav">
-    </div>
-  </div>
+<div class="circle"><div class="dot"></div></div>
 
-  <!-- ==============================================
-  Body Section
-  ============================================== -->
+<!-- main body section -->
 
-  <div class="container">
-    <div class="body_section row">
-      <div class="col-md-3">
-        <div class="card ">
-          <div class="card-body popular_photo_section">
-            <a href="#">Best</a> <a class="pull-right" href="#"><span>See all</span></a>
-            <div class="row">
-              <div class="col-md-6 popular_photo">
-                <a href="#"> <img src="images/profile/1.jpg" alt="" width="100%"></a>
-              </div>
-              <div class="col-md-6 popular_photo">
-                <a href="#"> <img src="images/profile/2.jpg" alt="" width="100%"></a>
-              </div>
-              <div class="col-md-6 popular_photo">
-                <a href="#"> <img src="images/profile/3.jpg" alt="" width="100%"></a>
-              </div>
-              <div class="col-md-6 popular_photo">
-                <a href="#"> <img src="images/profile/4.jpg" alt="" width="100%"></a>
-              </div>
-              <div class="col-md-6 popular_photo">
-                <a href="#"> <img src="images/profile/5.jpg" alt="" width="100%"></a>
-              </div>
-              <div class="col-md-6 popular_photo">
-                <a href="#"> <img src="images/profile/6.jpg" alt="" width="100%"></a>
-              </div>
+<div class="container main_body">
+	<div class="row" style="height:100%; margin:0px" >
+		<div class="col-md-5" style="padding:0px; height:100%">
+
+			<nav class="main_nav">
+				<ul class="home_nav">
+					<li class="about_btn tabbtn" onclick="tabbtn(event, 'about',0)"><i class="fa fa-home"></i></li>
+				</ul>
+				<ul>
+					<li class="resume_btn tabbtn border-center" onclick="tabbtn(event, 'resome',1)"> <i class="fa fa-id-card-o"></i> </br> RESUME</li>
+					<li class="works_btn tabbtn border-center" onclick="tabbtn(event, 'work',2)"> <i class="fa fa-paint-brush"></i></br>WORKS</li>
+					<li class="blog_btn tabbtn border-center" onclick="tabbtn(event, 'blog',3)"> <i class="fa fa-pencil-square-o"></i></br> BLOGS</li>
+					<li class="tutorial_btn tabbtn border-center" onclick="tabbtn(event, 'tutorial',4)"> <i class="fa fa-video-camera"></i></br> TUTORIAL</li>
+					<li class="gallery_btn tabbtn border-center" onclick="tabbtn(event, 'gallery',5)"> <i class="fa fa-picture-o"></i></br> GALLERY</li>
+					<li class="contact_btn tabbtn border-center" onclick="tabbtn(event, 'contact',6)"><i class="fa fa-handshake-o"> </i></br>CONTACT</li>
+				</ul>
+			</nav>
+			<div class="left_site" id="home">
+				<div class="profile_section" >
+					<img src="images/enamul.png"/>
+					<div>
+						<h1 class="title text-center">Md Enamul Haque</h1>
+						<p class="text-center">I am a <span class="designation"> Web Developer</span></p>
+					</div>
+					 	<div class="text-center">
+							<button type="button" class="btn btn-outline-secondary">Hire me</button>
+							<button type="button" class="btn btn-outline-secondary">Downlaod cv</button>
+						 </div>
+					 <div class="social">
+						<div class="frame">
+							<a href="#" class="button">
+								<i class="fa fa-facebook-f facebook"></i>
+							</a>
+							<a href="#" class="button">
+								<i class="fa fa-twitter twitter"></i>
+							</a>
+							<a href="#" class="button">
+								<i class="fa fa-instagram instagram"></i>
+							</a>
+							<a href="#" class="button">
+								<i class="fa fa-linkedin linkedin"></i>
+							</a>
+							<a href="#" class="button">
+								<i class="fa fa-pinterest pinterest"></i>
+							</a>
+						</div>
+					 </div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-7 right_site">
+			<div class="wow fadeInUp about_page tabcontent" id="about">
+				<h1 class="title border-left"><span class="first_later">About</span> me</h1>
+				<div class="row">
+					<div class="col-md-6">
+						<p class=""><strong class="title">Hello! I'm Md Enamul Haque.</strong> <br> web developer  with a strong passion. I have build several project for e-Commerch, Shop, Corporate Office  using PHP, Laravel, Wordpress. I want to obtain a full time job working as a Software Engineer to develop, maintain and design software</p>
+					</div>
+					<div class="col-md-6 pr-0">
+						<ul>
+							<li class="border-center"><p>Age: <span>23</span></p></li>
+							<li class="border-center"><p>Residence:  <span>Bangladesh</span></p></li>
+							<li class="border-center"><p>Freelance: <span>Avalable</span></p> </li>
+							<li><p>Address: <span>Gorai,Tangail</span></p> </li>
+						</ul>
+					</div>
+				</div>
+				<div class="service_section">
+					<h1 class="title service_title"> <span class="first_later">My </span>Services</h1>
+					<div class="row">
+						<div class="col-md-6 service">
+							<div class="box">
+								<i class="service_icon fa fa-code"></i>
+								<h6 class="title"> <strong>Software Development</strong></h6>
+								<p>Mordern and mobile-ready website that will help you all of your business</p>
+								<a href="#"><span>Read More</span></a>
+							</div>
+						</div>
+						<div class="col-md-6 service">
+							<div class="box">
+								<i class="service_icon fa fa-users"></i>
+								<h6 class="title"> <strong>Portfolio Website </strong></h6>
+								<p>Mordern and mobile-ready website that will help you all of your business</p>
+								<a href="#"><span>Read More</span></a>
+							</div>
+						</div>
+
+						<div class="col-md-6 service">
+							<div class="box">
+								<i class="service_icon fa fa-cart-arrow-down"></i>
+								<h6 class="title"> <strong>eCommerce Website</strong></h6>
+								<p>Mordern and mobile-ready website that will help you all of your business</p>
+								<a href="#"><span>Read More</span></a>
+							</div>
+						</div>
+
+						<div class="col-md-6 service">
+							<div class="box">
+								<i class="service_icon fa fa-briefcase"></i>
+								<h6 class="title"> <strong>Corporate WebSite</strong></h6>
+								<p>Mordern and mobile-ready website that will help you all of your business</p>
+								<a href="#"><span>Read More</span></a>
+							</div>
+						</div>
+
+						<div class="col-md-6 service">
+							<div class="box">
+								<i class="service_icon fa fa-paint-brush"></i>
+								<h6 class="title"> <strong>Graphic Design</strong></h6>
+								<p>Mordern and mobile-ready website that will help you all of your business</p>
+								<a href="#"><span>Read More</span></a>
+							</div>
+						</div>
+
+						<div class="col-md-6 service  ">
+							<div class="box">
+								<i class="service_icon fa fa-android"></i>
+								<h6 class="title"> <strong>Android App Development</strong></h6>
+								<p>Mordern and mobile-ready website that will help you all of your business</p>
+								<a href="#"><span>Read More</span></a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="wow fadeInUp tabcontent resume_page" id="resome">
+				<div class="edu_skill">
+					<div class="row sub_title">
+						<div class="col-sm-6">
+							<h1 class=" title"><i class="fa fa-briefcase first_later pr-2"></i>EXPERIANCE</h1>
+							<div class="job_info box">
+								<div class="job_company_info">
+									<div class="active_job_date ">
+										<span class="first_later">2020 - Present</span>
+									</div>
+									<div class="job_company mt-2">
+										<h6 class="title mb-0">Uniglory Packaging</h6>
+									</div>
+
+									<div class="job_post">
+										<small>Design Officer</small>
+									</div>
+									<div class="job_company_logo">
+										<img src="images/upil.png"></img>
+									</div>
+								</div>
+								<div class="job_des">
+									<p>Uniglory is a Packaging Company. printing Section, Design Shipping Mark and look After </p>
+								</div>
+							</div>
+
+							<div class="job_info box">
+								<div>
+									<div class="job_date ">
+										<span>2018 - 2020</span>
+									</div>
+									<div class="job_company mt-2">
+										<h6 class="title mb-0">Info Computer</h6>
+									</div>
+
+									<div class="job_post">
+										<small>Trainer</small>
+									</div>
+									<div class="job_company_logo">
+										<img src="images/ita.png"></img>
+									</div>
+								</div>
+								<div class="job_des">
+									<p>Uniglory is a Packaging  printing Section, Design Shipping Mark and look After </p>
+								</div>
+							</div>
 
 
+						</div>
+						<div class="col-sm-6">
+							<h1 class="title"><i class="fa fa-graduation-cap first_later pr-2" aria-hidden="true"></i>EDUCATION</h1>
+							<div class="education_info box">
+								<div class="job_company_info">
+									<div class="job_date ">
+										<span class="">2020 - Present</span>
+									</div>
+									<div class="job_company mt-2">
+										<h6 class="title mb-0">Dhaka Collage</h6>
+									</div>
 
-            </div>
-          </div>
-        </div>
-      </div>
+									<div class="job_post">
+										<small>BSc in CSE</small>
+									</div>
+									<div class="school_logo">
+										<img src="images/dc.png"></img>
+									</div>
+								</div>
+								<div class="job_des">
+									<p>Uniglory i.Carton Layout Design as Section, Design Shipping Mark and look After </p>
+								</div>
+							</div>
+							<div class="education_info box">
+								<div class="job_company_info">
+									<div class="job_date ">
+										<span class="">2016 - 2020</span>
+									</div>
+									<div class="job_company mt-2">
+										<h6 class="title mb-0">Naogaon Polytechnic</h6>
+									</div>
 
-      <!-- post section -->
-      <div class="col-md-6 post_section_main">
-        <div class="post_section">
-          <div class="image_box card mb-2">
-            <div class="user_post card-header">
-              <ul>
-                <li><a href="#"> <img src="images/postImages/mehjabin.jpg" alt=""> </a> </li>
-                <li><a href="#">Md Enamul Haque </a><a href="#">1 Day Ago</a>  </li>
-              </ul>
-            </div>
-            <div class="post_photo card-body"  id="myBtn">
-                <img src="images/postImages/mehjabin.jpg" alt="">
-            </div>
-            <div class="content_post">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="post_tag">
-              <div class="row">
-                <div class="col-sm-4">
-                  <a href="#"></a><a href="#">  News</a>
-                </div>
-                <div class="col-sm-4 text-center ">
-                   <a href="#">  Latest</a>
-                </div>
-                <div class="col-sm-4 text-right">
-                  <a href="#"><a href="#"><a href="#"> Best</a>
-                </div>
-              </div>
-            </div>
-            <div class="like_comment">
-              <div class="row">
-                <div class="col-sm-4 love_react">
-                  <a href="#"></a><a href="#"><i class="fa fa-heart" aria-hidden="true"></i> Like</a>
-                </div>
-                <div class="col-sm-4 text-center comment">
-                   <a href="#"><i class="fa fa-comment" aria-hidden="true"></i> Comment</a>
-                </div>
-                <div class="col-sm-4 text-right Share">
-                  <a href="#"><a href="#"><a href="#"><i class="fa fa-share" aria-hidden="true"></i> Share</a>
-                </div>
-              </div>
-            </div>
-            <form class="search_section" action="" method="post">
-              <div class="input-group form-sm form-2">
-                <div class="input-group-prepend">
-                  <img src="images/postImages/mehjabin.jpg" alt="" width="30px">
-               </div>
-                <input type="text" class="form-control" name="" placeholder="Write Comment'.." value="">
-                        <div class="input-group-append"> <span class="input-group-text"><i class="fa fa-send  text-gray"
-                         aria-hidden="true"></i></span>
-                       </div>
-              </div>
-            </form>
-          </div>
+									<div class="job_post">
+										<small>Diploma in Computer</small>
+									</div>
+									<div class="school_logo">
+										<img src="images/himaloy.png"></img>
+									</div>
+								</div>
+								<div class="job_des">
+									<p>Uniglory is a Packaginon Layout Design Design Shipping Mark and look After </p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row skill ">
+					<div class="col-md-6">
+					<h1 class="border-center text-center title"><i class="fa fa-paint-brush first_later pr-2" aria-hidden="true"></i>Skill</h1>
+						<div class="design">
+							<ul>
+								<li>
+									<h6>Web Design</h6>
+									<div class="progress">
+										<div class="percentage" style="width:70%"></div>
+									</div>
+								</li>
 
-          <div class="image_box card mb-2">
-            <div class="user_post card-header">
-              <ul>
-                <li><a href="#"> <img src="images/profile/1.jpg" alt=""> </a> </li>
-                <li><a href="#">Md Enamul Haque </a><a href="#">1 Day Ago</a>  </li>
-              </ul>
-            </div>
-            <div class="post_photo card-body">
-                <img src="images/profile/1.jpg" alt="">
-            </div>
-            <div class="like_comment">
-              <div class="row">
-                <div class="col-sm-4 love_react">
-                  <a href="#">230</a>&nbsp; &nbsp;<a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
-                </div>
-                <div class="col-sm-4 text-center comment">
-                  <a href="#">24</a>&nbsp; &nbsp;<a href="#"><i class="fa fa-comment" aria-hidden="true"></i></a>
-                </div>
-                <div class="col-sm-4 text-right Share">
-                  <a href="#">3</a>&nbsp; &nbsp;<a href="#"><a href="#"><i class="fa fa-share" aria-hidden="true"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="image_box card mb-2">
-            <div class="user_post card-header">
-              <ul>
-                <li><a href="#"> <img src="images/profile/2.jpg" alt=""> </a> </li>
-                <li><a href="#">Md Enamul Haque </a><a href="#">1 Day Ago</a>  </li>
-              </ul>
-            </div>
-            <div class="post_photo card-body">
-                <img src="images/profile/2.jpg" alt="">
-            </div>
-            <div class="like_comment">
-              <div class="row">
-                <div class="col-sm-4 love_react">
-                  <a href="#">230</a>&nbsp; &nbsp;<a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
-                </div>
-                <div class="col-sm-4 text-center comment">
-                  <a href="#">24</a>&nbsp; &nbsp;<a href="#"><i class="fa fa-comment" aria-hidden="true"></i></a>
-                </div>
-                <div class="col-sm-4 text-right Share">
-                  <a href="#">3</a>&nbsp; &nbsp;<a href="#"><a href="#"><i class="fa fa-share" aria-hidden="true"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+								<li>
+									<h6>Web Development</h6>
+									<div class="progress">
+										<div class="percentage" style="width:50%"></div>
+									</div>
+								</li>
 
-      <!-- suggest follower -->
+								<li>
+									<h6>Graphic Design</h6>
+									<div class="progress">
+										<div class="percentage" style="width:90%"></div>
+									</div>
+								</li>
+								<li>
+									<h6>Video Editing</h6>
+									<div class="progress">
+										<div class="percentage" style="width:60%"></div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<h1 class=" border-center text-center title"><i class="fa fa-flag first_later pr-2" aria-hidden="true"></i>Language</h1>
+						<div class="language">
+							<ul>
+								<li>
+									<h6>Bangla</h6>
+									<img src="images/banlan.png" />
+								</li>
+								<li>
+									<h6>English</h6>
+									<img src="images/englan.png" />
+								</li>
+								<li>
+									<h6>Hindi</h6>
+									<img src="images/hindilan.png" />
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="wow fadeInUp tabcontent works_page" id="work">
+				<div class="border-left ">
+					<ul class="work_menu_section">
+					  <li class="work_menu " data-filter="all">All</li>
+					  <li class="work_menu" data-filter="laravel">Laravel</li>
+					  <li class="work_menu" data-filter="php">PHP</li>
+					  <li class="work_menu" data-filter="static">Static</li>
+					  <li class="work_menu" data-filter="wordpress">Wordpress</li>
+					  <li class="work_menu" data-filter="graphic">Graphic</li>
+					</ul>
+				</div>
 
-      <div class="col-md-3">
-         <div class="card">
-           <div class="card-header home_page_user">
-               <ul>
-                 <li><img src="images/postImages/mehjabin.jpg" alt=""></li>
-                 <li><a href="#">Md Enamul Haque</a> <a href="#"> <i class="fa fa-pencil"></i> </a> </li>
-               </ul>
-           </div>
-           <div class="card-body suggest_follower">
-             <ul>
-               <li>Suggest Follower</li>
-               <li><img src="images/profile/1.jpg" alt=""> &nbsp; <a href="#"> Md Mamun </a> <a href="#"><span>follow</span></a>  </li>
-               <li><img src="images/profile/2.jpg" alt="">  &nbsp;<a href="#"> Enamul Haque </a> <a href="#"><span>follow</span></a>  </li>
-               <li><img src="images/profile/3.jpg" alt="">  &nbsp;<a href="#"> Mamunul Islam </a> <a href="#"><span>follow</span></a>  </li>
-               <li><img src="images/profile/4.jpg" alt="">  &nbsp;<a href="#"> Al-amin Hossain </a> <a href="#"><span>follow</span></a>  </li>
-               <li><img src="images/profile/5.jpg" alt="">  &nbsp;<a href="#"> Julkar Naim </a> <a href="#"><span>follow</span></a>  </li>
-               <li><img src="images/profile/6.jpg" alt="">  &nbsp;<a href="#"> Shakh Hasina </a> <a href="#"><span>follow</span></a>  </li>
-               <li><img src="images/profile/7.jpg" alt="">  &nbsp;<a href="#"> Obydul Kader </a> <a href="#"><span>follow</span></a>  </li>
-               <li><img src="images/profile/8.jpg" alt="">  &nbsp;<a href="#"> Monirul Islam </a> <a href="#"><span>follow</span></a>  </li>
+				<div class="work_product">
+					<div class="row">
+						<div class="col-md-6 itemwork wordpress">
+							<div class="box work">
+								<img src="images/protfolio/w1.jpg" />
+								 <div class="work_content">
+									 <div class="work_text">
+										<h3>E-Commerce</h3>
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas id beatae in nulla expedita facere tenetur enim</p>
+										<button class="btn btn-outline-light">Live Preview</button>
+									
+									 </div>
+								 </div>
+							</div>
+						</div>
+						<div class="col-md-6 pb-4 itemwork graphic">
+							<div class="work">
+								<img src="images/protfolio/t1.jpg" />
 
-             </ul>
-           </div>
-         </div>
-      </div>
-    </div>
-  </div>
+								<div class="work_content">
+									<div class="work_text">
+									   <h3>T-Shirt</h3>
+									   <p>Dolor sit amet consectetur adipisicing elit. Quas id beatae in nulla expedita facere tenetur enim</p>
+									   <button class="btn btn-outline-light">Live Preview</button>
+									</div>
+								</div>
+								 
+							</div>
+						</div>
+						<div class="col-md-6 pb-4 itemwork graphic">
+							<div class="work">
+								<img src="images/protfolio/t2.jpg" />
+
+								<div class="work_content">
+									<div class="work_text">
+									   <h3>Logo Design</h3>
+									   <p>Orem ipsum dolor sit amet consectetur adipisicing elit. Quas id beatae in nulla expedita facere tenetur enim</p>
+									   <button class="btn btn-outline-light">Live Preview</button>
+									</div>
+								</div>
+								 
+							</div>
+						</div>
+						<div class="col-md-6 pb-4 itemwork graphic">
+							<div class="work">
+								<img src="images/protfolio/p1.jpg" />
+
+								<div class="work_content">
+									<div class="work_text">
+									   <h3>E-Commerce</h3>
+									   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas id beatae in nulla expedita facere tenetur enim</p>
+									   <button class="btn btn-outline-light">Live Preview</button>
+									</div>
+								</div>
+								 
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="wow fadeInUp tabcontent blog_page" id="blog">
+				<h1> Blog
+				</h1>
+			</div>
+
+			<div class="wow fadeInUp tabcontent blog_page" id="blog">
+				<h1> Tutorial
+				</h1>
+			</div>
+
+			<div class="wow fadeInUp tabcontent blog_page" id="blog">
+				<h1> GALLERY
+				</h1>
+			</div>
+
+			<div class="wow fadeInUp tabcontent contact_page" id="contact">
+				 
+				<div class="contact_info about_page">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3191.6362465915972!2d90.42207158717481!3d23.820770586508537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7b75b7a7e9f%3A0xf90036ea49963ba6!2sInfo%20Computer%20Tech!5e1!3m2!1sen!2sbd!4v1613218828675!5m2!1sen!2sbd" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+					<div class="row">
+						<div class="col-md-6">
+							<ul>
+								<li><p>Address: <span>Gorai,Tangail</span></p> </li>
+								<li><p>Mobile: <span>+8801796351081</span></p> </li>
+
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<ul>
+								<li class="border-center"><p>E-mail: <span>info@enamul.com</span></p></li>
+								<li class="border-center"><p>Freelance: <span>Avalable</span></p> </li>
+
+							</ul>
+						</div>
+					</div>
+					
+					<div class="contact_form">
+					<h1 class="title service_title"> <span class="first_later">Get</span> In Touhch</h1>
+					 <form class="form">
+						<div class="row">
+							<div class="col-sm-6">
+								<input class="form-control" type="text" placeholder="First Name"/>
+							</div>
+							<div class="col-sm-6">
+								<input class="form-control" type="text" placeholder="Last Name"/>
+							</div>
+							<div class="col-sm-12">
+								<input class="form-control" type="text" placeholder="Last Name"/>
+							</div>
+							<div class="col-sm-12">
+								 <textarea placeholder="Your Massage" class="form-control" rows="4" > </textarea>
+								 <button class="form-control" type="submit"> <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+							</div>
+							
+								
+						</div>
+					 </form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
-<!-- =====================================================
-Modal image view section
-===================================================== -->
-
-<div class="modal_image_comment" id="myModal">
-  <button type="button" class="close_modal" name="button">X</button>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-1">
-
-      </div>
-      <div class="col-md-10 image_comment">
-         <div class="row">
-           <div class="col-md-7">
-              <img class="slider_image" src="images/profile/1.jpg" alt="">
-              <img class="slider_image" src="images/profile/2.jpg" alt="">
-              <img class="slider_image" src="images/profile/3.jpg" alt="">
-              <div class="left_btn">
-                  <i class="fa fa-chevron-left" aria-hidden="true"></i>
-              </div>
-              <div class="right_btn" onl>
-                  <i class="fa fa-chevron-right" aria-hidden="true"></i>
-              </div>
-           </div>
-
-           <div class="col-md-5">
-              <div class="card">
-                <div class="card-header view_post_user">
-                  <ul>
-                    <li> <img src="images/postImages/mehjabin.jpg" alt=""></li>
-                    <li><a href="#">Md Enamul Haque </a></li>
-                  </ul>
-                </div>
-                <div class="card-body modal_comment_view">
-                  <ul>
-                    <li>
-                        <img src="images/postImages/mehjabin.jpg" alt=""><div> <a href="#">Md Enamul Haque</a> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. </div>
-
-                    </li>
-                    <li class="reply_comment">
-                        <img src="images/postImages/mehjabin.jpg" alt=""><div> <a href="#">Md Enamul Haque</a> Lorem ipsum dolor sit . </div>
-                    </li>
-                    <li class="reply_comment">
-                        <img src="images/postImages/mehjabin.jpg" alt=""><div> <a href="#">Md Enamul Haque</a> Lorem ipsum dolor sit . </div>
-                    </li>
-                    <li class="reply_comment">
-                        <img src="images/postImages/mehjabin.jpg" alt=""><div> <a href="#">Md Enamul Haque</a> Lorem ipsum dolor sit . </div>
-                    </li>
-                    <li>
-                        <img src="images/postImages/mehjabin.jpg" alt=""><div> <a href="#">Md Enamul Haque</a> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </div>
-                    </li>
-                    <li>
-                        <img src="images/postImages/mehjabin.jpg" alt=""><div> <a href="#">Md Enamul Haque</a> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </div>
-                    </li>
-                  </ul>
-                </div>
-                <div class="card-footer" style="padding:0px">
-                  <form class="search_section" action="" method="post">
-                    <div class="input-group form-sm form-2">
-                      <textarea class="form-control" name="name" rows="2" cols="2"></textarea>
-                              <div class="input-group-append"> <span class="input-group-text"><i class="fa fa-send  text-gray"
-                               aria-hidden="true"></i></span>
-                             </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-           </div>
-         </div>
-      </div>
-      <div class="col-md-1">
-
-      </div>
-    </div>
-  </div>
-</div>
-
 </body>
   <script src="js/master.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
+  <script src="js/core.js"></script>
+    <script type="text/javascript">
+    const instance = new Typewriter('.designation', {
+      strings: ['Web Developer', 'Graphic Designer','Blogger'],
+      autoStart: true,
+      loop: true,
+    });
+  </script>
+
+
+
+  <!--for wow-->
+
+  <script src="js/wow.js"></script>
+
+<script>
+     wow = new WOW(
+		  {
+		  boxClass:     'wow',      // default
+		  animateClass: 'animated', // default
+		  offset:       1,          // default
+		  mobile:       true,       // default
+		  live:         true        // default
+		}
+		)
+		wow.init();
+
+</script>
+
+
+ <script type="text/javascript">
+    $(document).ready(function(){
+      $('.work_menu').click(function(){
+        const value = $(this).attr('data-filter');
+        if(value=='all'){
+          $('.itemwork').show('1000');
+        }else{
+          $('.itemwork').not('.'+value).hide('1000');
+          $('.itemwork').filter('.'+value).show('1000');
+
+        }
+      })
+
+
+    })
+	
+  </script>
+</html>
+
 </html>
