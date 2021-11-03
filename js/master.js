@@ -1,39 +1,30 @@
-// function mobileBtn(evt, btnName) {
-
-//   var i, tabcontent, tablinks;
-//   tabcontent = document.getElementsByClassName("tabcontent");
-//   tablinks = document.getElementsByClassName("mbl_btn");
-  
-// 	for (i = 0; i < tabcontent.length; i++) {
-// 		tabcontent[i].style.display = "none";
-// 	}
-// 	for (i = 0; i < tablinks.length; i++) {
-// 		tablinks[i].className = tablinks[i].className.replace(" active", "");
-// 	}
-//   document.getElementById(btnName).style.display = "block";
-   
-//   evt.currentTarget.className += " active";
-// }
+// Menu Section
 
 function tabbtn(evt, btnName,btn) {
-	var i, tabcontent, tabbtn;
+	var i, tabcontent, tabbtn, mbl_btn;
 	tabcontent = document.getElementsByClassName("tabcontent");
 	tabbtn = document.getElementsByClassName("tabbtn");
+	mbl_btn = document.getElementsByClassName("mbl_btn");
+
 	
 	if(btnName!=home && window.innerWidth<=700){
 		document.querySelector(".left_site").style.display="none";
 	}
-	
+
 	  for (i = 0; i < tabcontent.length; i++) {
 		  tabcontent[i].style.display = "none";
 	  }
 	  for (i = 0; i < tabbtn.length; i++) {
 		tabbtn[i].style.background = "none";
 	  }
+
+	  for (i = 0; i < mbl_btn.length; i++) {
+		mbl_btn[i].classList.remove("mbl_btn_active");
+	  }
 	  document.getElementById(btnName).style.display = "block";
 	  
-	   
 	  tabbtn[btn].style.background = "#defaff";
+	  mbl_btn[btn].classList.add("mbl_btn_active");
 	
   
 	  localStorage.setItem("page",btnName);
@@ -41,8 +32,7 @@ function tabbtn(evt, btnName,btn) {
   }
 
 
-
-
+// Local Stroage Data Set
 
   if(localStorage.length>0){
 	if(window.innerWidth<=700){
@@ -64,12 +54,17 @@ function tabbtn(evt, btnName,btn) {
   }
 
 
-
-
-//  ======================================================
-//  work menu
-//  ======================================================
+//   work Page Menu
  
+ function work_menu(work_btn){
+	var work_menu = document.getElementsByClassName("work_menu");
+	for(i=0;i<work_menu.length;i++){
+		work_menu[i].classList.remove("work_menu_active");
+	 }
+
+	 work_menu[work_btn].classList.add("work_menu_active");
+ }
+ work_menu(0);
 
 
 
